@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float minTime = 0.8f;
 
     [SerializeField] private float delayBetweenButtons = 0.5f;
+
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI timerText;
 
     [Header("Game State")]
     [SerializeField] private int score = 0;
@@ -50,6 +54,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         score = 0;
+        UpdateScoreUI();
         isPlaying = true;
         ActivateRandomButton();
         Debug.Log("Partie lancée !");
@@ -57,6 +62,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        UpdateTimerUI();
         if (!isPlaying || isWaiting) return;
 
         remainingTime -= Time.deltaTime;
@@ -100,6 +106,7 @@ public class GameManager : MonoBehaviour
         if (button == currentButton && button.IsActive)
         {
             score++;
+            UpdateScoreUI();
             Debug.Log($"Correct! Score: {score}");
             StartCoroutine(ActivateNextWithDelay());
         }
@@ -133,5 +140,17 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log($"Game over! Final score: {score}");
+    }
+
+    private void UpdateScoreUI()
+    {
+        if (scoreText != null)
+            scoreText.text = "Score : " + score;
+    }
+
+    private void UpdateTimerUI()
+    {
+        if (timerText != null)
+            timerText.text = "Temps : " + remainingTime.ToString("F1");
     }
 }
