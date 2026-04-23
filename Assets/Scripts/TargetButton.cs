@@ -1,64 +1,101 @@
 using UnityEngine;
 
+/// <summary>
+/// TargetButton — Bouton de jeu VR.
+/// Gère les couleurs (Normal/Extra/Piège), l'émission lumineuse et les 3 sons.
+/// </summary>
 public class TargetButton : MonoBehaviour
 {
-    [Header("Visuals")]
-    [SerializeField] private Color activeColor = Color.yellow;
-    [SerializeField] private Color inactiveColor = Color.gray;
+    // ── Types ─────────────────────────────────────────────────────────
+    public enum ButtonType { Normal, Extra, Piege }
 
-    private AudioSource audioSource;
-    private Renderer buttonRenderer;
-    private Material buttonMaterial;
-    private bool isActive = false;
+    [Header("Couleurs")]
+    public Color colorJaune    = Color.yellow;
+    public Color colorBleu     = new Color(0.2f, 0.5f, 1f);
+    public Color colorVert     = new Color(0.1f, 0.9f, 0.3f);
+    public Color colorRouge    = new Color(1f, 0.15f, 0.15f);
+    public Color inactiveColor = new Color(0.25f, 0.25f, 0.25f);
 
-    public bool IsActive => isActive;
+    [Header("Tes 3 sons")]
+    [Tooltip("Joué quand le bouton s'allume")]
+    public AudioClip sonEnCours;
+    [Tooltip("Joué quand l'appui est correct ou piège esquivé")]
+    public AudioClip sonSucces;
+    [Tooltip("Joué quand raté, mauvais bouton ou piège appuyé")]
+    public AudioClip sonEchec;
 
-    private void Awake()
+    // ── Privé ─────────────────────────────────────────────────────────
+    private AudioSource  audioSource;
+    private Renderer     buttonRenderer;
+    private Material     buttonMaterial;
+    private ButtonType   currentType;
+    private bool         isActive;
+
+    public bool       IsActive => isActive;
+    public ButtonType Type     => currentType;
+
+    // ── Init ──────────────────────────────────────────────────────────
+    void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
-
-        // Le Renderer est sur un objet enfant (le mesh), pas sur le parent
+        audioSource    = GetComponent<AudioSource>();
         buttonRenderer = GetComponentInChildren<Renderer>();
-
         if (buttonRenderer != null)
-        {
-            // On clone le material pour ne pas affecter les autres boutons
             buttonMaterial = buttonRenderer.material;
-        }
-        else
-        {
-            Debug.LogWarning($"[TargetButton] Aucun Renderer trouvé sur {gameObject.name} ou ses enfants.");
-        }
-
         TurnOff();
     }
 
-    // Active le bouton : change la couleur et joue le son spatialisé.
-    public void TurnOn()
+    // ── API publique ──────────────────────────────────────────────────
+
+    /// <summary>Allume le bouton avec le type donné et joue sonEnCours.</summary>
+    public void TurnOn(ButtonType type)
     {
-        isActive = true;
+        isActive    = true;
+        currentType = type;
 
-        if (buttonMaterial != null)
+        Color c = type switch
         {
-            buttonMaterial.color = activeColor;
-            buttonMaterial.EnableKeyword("_EMISSION");
-            buttonMaterial.SetColor("_EmissionColor", activeColor * 2f);
-        }
+            ButtonType.Extra => colorVert,
+            ButtonType.Piege => colorRouge,
+            _                => Random.value > 0.5f ? colorJaune : colorBleu
+        };
 
-        audioSource.Play();
-        //audioSource.PlayOneShot(audioSource.clip);
+        ApplyColor(c);
+        PlayClip(sonEnCours);
     }
 
-    // Désactive le bouton visuellement.
+    /// <summary>Éteint le bouton.</summary>
     public void TurnOff()
     {
         isActive = false;
+        ApplyColor(inactiveColor);
+    }
 
-        if (buttonMaterial != null)
+    /// <summary>Joue sonSucces ou sonEchec selon le résultat.</summary>
+    public void PlayResultSound(bool success)
+    {
+        PlayClip(success ? sonSucces : sonEchec);
+    }
+
+    // ── Helpers ───────────────────────────────────────────────────────
+    private void ApplyColor(Color c)
+    {
+        if (buttonMaterial == null) return;
+        buttonMaterial.color = c;
+        if (c == inactiveColor)
         {
-            buttonMaterial.color = inactiveColor;
             buttonMaterial.DisableKeyword("_EMISSION");
             buttonMaterial.SetColor("_EmissionColor", Color.black);
         }
+        else
+        {
+            buttonMaterial.EnableKeyword("_EMISSION");
+            buttonMaterial.SetColor("_EmissionColor", c * 2f);
+        }
+    }
+
+    private void PlayClip(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+            audioSource.PlayOneShot(clip);
     }
 }

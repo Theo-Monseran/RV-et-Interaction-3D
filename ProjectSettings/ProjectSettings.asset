@@ -183,7 +183,7 @@ PlayerSettings:
   AndroidPreferredInstallLocation: 0
   AndroidPreferredDataLocation: 1
   aotOptions: 
-  stripEngineCode: 1
+  stripEngineCode: 0
   iPhoneStrippingLevel: 0
   iPhoneScriptCallOptimization: 0
   ForceInternetPermission: 0
@@ -1006,11 +1006,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 000aee82-e160-4952-b344-468cae05eed3
+  cloudProjectId: 2b6d3040-0c34-4864-98ef-da82c4e25204
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: VR_Project
-  organizationId: mikeytango
+  projectName: VR_Project (10)
+  organizationId: mosby12
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
