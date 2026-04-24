@@ -1,9 +1,10 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
-using TMPro;
 
 /// <summary>
 /// GameManager — Jeu de réflexe VR complet.
@@ -366,6 +367,12 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log($"[GM] Game Over — Cause : {(causeVies ? "vies" : "chrono")} | Score : {score}");
+
+        // Sauvegarde le score pour l'afficher dans la scène GameOver
+        PlayerPrefs.SetInt("LastScore", score);
+        PlayerPrefs.Save();
+
+        SceneManager.LoadScene("GameOver");
     }
 
     // ════════════════════════════════════════════════════════════════════
