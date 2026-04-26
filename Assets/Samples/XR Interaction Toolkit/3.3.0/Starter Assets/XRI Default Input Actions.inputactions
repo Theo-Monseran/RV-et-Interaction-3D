@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "XRI Default Input Actions",
     "maps": [
         {
@@ -3395,6 +3396,34 @@
                     "action": "Spawn Object",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Pause",
+            "id": "e3762a46-7734-4a78-b062-d441c4b27452",
+            "actions": [
+                {
+                    "name": "PauseToggle",
+                    "type": "Button",
+                    "id": "30de2540-265e-4bc6-864b-bf7386cd5567",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8e2421f0-9963-4677-9718-b50ee0b1c475",
+                    "path": "<XRController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PauseToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
