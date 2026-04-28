@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -93,8 +93,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 609b082994efd274d8b45ea0d930a47c, type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: babed66f44e8b5445b185fac4e02e130, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 78151f5e58fb9f749bd5225f789faa27, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -119,6 +119,81 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &16065364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 16065367}
+  - component: {fileID: 16065366}
+  - component: {fileID: 16065365}
+  m_Layer: 5
+  m_Name: ClockIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &16065365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16065364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1566773009, guid: ae5b6424ab61c4a0c9d5577bc84ade70, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &16065366
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16065364}
+  m_CullTransparentMesh: 1
+--- !u!224 &16065367
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16065364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.9428765}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 767532680}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.33608508, y: -0.5019607}
+  m_SizeDelta: {x: 2, y: 2}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &16522132
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +270,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d46bb438eef41d449bb7588f4a77e06, type: 2}
+  - {fileID: 2100000, guid: db8d88c61a0f47341a365536653b014e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2786,16 +2861,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21966520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 1.0706373}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 767532680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -0.096526325, y: -0.5630913}
+  m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &21966522
 MonoBehaviour:
@@ -2817,7 +2892,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Score :'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2844,15 +2919,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 0.15
+  m_fontSizeBase: 0.15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -3219,16 +3294,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333304962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0.9428765}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 767532680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0.48962367, y: -0.50183016}
+  m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333304964
 MonoBehaviour:
@@ -3250,7 +3325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3277,15 +3352,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 2
+  m_fontSizeBase: 2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -3684,11 +3759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.04500004
+      value: 0.04500003
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00000012293458
+      value: -0.00000009313226
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_RootOrder
@@ -3903,9 +3978,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -3962,7 +4037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2999847
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4069,16 +4144,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450437035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0.94287646}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 767532680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -0.64389133, y: -0.506046}
+  m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450437037
 MonoBehaviour:
@@ -4100,8 +4175,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b342eb1e41a45ce41b5c7c684a17c465, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 346246939, guid: 232aeb0e64dfd4209854859b61e5972f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4263,16 +4338,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481168474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0.94287646}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 767532680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -0.40389132, y: -0.506046}
+  m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &481168476
 MonoBehaviour:
@@ -4294,8 +4369,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b342eb1e41a45ce41b5c7c684a17c465, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 346246939, guid: 232aeb0e64dfd4209854859b61e5972f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4848,15 +4923,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0000000037252903
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.045000017
+      value: 0.04499965
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.000000009487849
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_RootOrder
@@ -4969,9 +5044,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -4998,260 +5073,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &645579477
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 645579480}
-  - component: {fileID: 645579479}
-  - component: {fileID: 645579478}
-  m_Layer: 0
-  m_Name: Directional Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &645579478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645579477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
---- !u!108 &645579479
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645579477}
-  m_Enabled: 1
-  serializedVersion: 12
-  m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 0.5, y: 0.5}
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ForceVisible: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
---- !u!4 &645579480
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645579477}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 4.08, y: 8.98, z: -4.40948}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &718799854
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 718799857}
-  - component: {fileID: 718799856}
-  - component: {fileID: 718799855}
-  m_Layer: 0
-  m_Name: Point Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &718799855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718799854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
---- !u!108 &718799856
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718799854}
-  m_Enabled: 1
-  serializedVersion: 12
-  m_Type: 2
-  m_Color: {r: 0.72327036, g: 0.29041025, b: 0.27065772, a: 1}
-  m_Intensity: 10
-  m_Range: 5
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 0.5, y: 0.5}
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 2
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ForceVisible: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
---- !u!4 &718799857
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718799854}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.05782572, y: -0.91046077, z: -0.13669649, w: -0.38604605}
-  m_LocalPosition: {x: -4.469, y: 2.097, z: -2.944}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &756192406
 GameObject:
   m_ObjectHideFlags: 0
@@ -5412,9 +5233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -5510,7 +5331,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1483804730}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -5521,7 +5342,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &767532680
 RectTransform:
@@ -5531,24 +5352,24 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767532676}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6.445}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 450437036}
   - {fileID: 1734196743}
   - {fileID: 481168475}
-  - {fileID: 1693238418}
   - {fileID: 333304963}
   - {fileID: 1120348641}
   - {fileID: 21966521}
   - {fileID: 1851995325}
+  - {fileID: 16065367}
   m_Father: {fileID: 200822020}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2.635986, y: 2.63855}
-  m_SizeDelta: {x: 882, y: 565.6667}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1.9, y: 1.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &787217265 stripped
 GameObject:
@@ -5664,9 +5485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -6193,9 +6014,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -6244,7 +6065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1120348641
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6253,8 +6074,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120348640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.11160076}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 767532680}
@@ -6262,7 +6083,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120348642
 MonoBehaviour:
@@ -6311,15 +6132,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 0.02
+  m_fontSizeBase: 0.02
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -6597,9 +6418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -6636,15 +6457,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0000000026822136
+      value: -0.000000015584078
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.045000076
+      value: 0.044999983
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000000018626451
+      value: 0.000000022351742
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_RootOrder
@@ -6859,9 +6680,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -7479,7 +7300,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d46bb438eef41d449bb7588f4a77e06, type: 2}
+  - {fileID: 2100000, guid: db8d88c61a0f47341a365536653b014e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7521,15 +7342,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0000000026822136
+      value: 0.000000014373359
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.045000076
+      value: 0.044999912
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000000018626451
+      value: 0.000000044703484
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_RootOrder
@@ -7744,9 +7565,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -7892,9 +7713,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -7997,7 +7818,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d46bb438eef41d449bb7588f4a77e06, type: 2}
+  - {fileID: 2100000, guid: db8d88c61a0f47341a365536653b014e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10562,6 +10383,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 186123943}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!20 &1483804730 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1503104711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10693,9 +10519,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -10967,11 +10793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.045000017
+      value: 0.045000013
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.000000116066076
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_RootOrder
@@ -11084,9 +10910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -11195,7 +11021,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7d02519ee5c8cb745b09b59fc3d367fe, type: 2}
+  - {fileID: 2100000, guid: db8d88c61a0f47341a365536653b014e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11227,81 +11053,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648367993}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1693238417
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1693238418}
-  - component: {fileID: 1693238420}
-  - component: {fileID: 1693238419}
-  m_Layer: 5
-  m_Name: ClockIcon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1693238418
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693238417}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 7.11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 767532680}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.37, y: -280.26}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1693238419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693238417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1693238420
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693238417}
-  m_CullTransparentMesh: 1
 --- !u!1 &1734196742
 GameObject:
   m_ObjectHideFlags: 0
@@ -11328,16 +11079,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734196742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0.94287646}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 767532680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -0.5238913, y: -0.506046}
+  m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1734196744
 MonoBehaviour:
@@ -11359,8 +11110,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b342eb1e41a45ce41b5c7c684a17c465, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 346246939, guid: 232aeb0e64dfd4209854859b61e5972f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11490,10 +11241,13 @@ MonoBehaviour:
   timerBoutonText: {fileID: 1120348642}
   timerGlobalText: {fileID: 333304964}
   messageText: {fileID: 1851995326}
-  heartImages: []
-  heartFull: {fileID: 21300000, guid: b342eb1e41a45ce41b5c7c684a17c465, type: 3}
-  heartEmpty: {fileID: 21300000, guid: 2f8349570a152884fb6cf7ebdc8c18b3, type: 3}
-  clockIcon: {fileID: 0}
+  heartImages:
+  - {fileID: 450437037}
+  - {fileID: 1734196744}
+  - {fileID: 481168476}
+  heartFull: {fileID: 346246939, guid: 232aeb0e64dfd4209854859b61e5972f, type: 3}
+  heartEmpty: {fileID: -1983003219, guid: cb684f875b26e4fb8a2129abf1e8de80, type: 3}
+  clockIcon: {fileID: 16065365}
   clockColorNormal: {r: 1, g: 1, b: 1, a: 1}
   clockColorUrgence: {r: 1, g: 0.3, b: 0.3, a: 1}
   seuilUrgence: 20
@@ -11502,15 +11256,15 @@ MonoBehaviour:
   sfxSource: {fileID: 1217370211}
   sonGameOver: {fileID: 0}
   sonChronoFini: {fileID: 0}
-  tempsGlobalMax: 120
-  tempsParBoutonInit: 3
-  reductionSucces: 0.05
-  tempsMin: 0.6
+  tempsGlobalMax: 200
+  tempsParBoutonInit: 6
+  reductionSucces: 0.2
+  tempsMin: 3
   penaliteRate: 3
-  delaiEntreBtn: 0.4
+  delaiEntreBtn: 1
   viesDepart: 3
-  probaExtra: 0.15
-  probaPiege: 0.1
+  probaExtra: 0
+  probaPiege: 0.08
 --- !u!4 &1763268654
 Transform:
   m_ObjectHideFlags: 0
@@ -11545,7 +11299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1851995325
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11554,16 +11308,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851995324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 1.1099999}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 767532680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0.14, y: 0}
+  m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1851995326
 MonoBehaviour:
@@ -11612,8 +11366,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 0.47
+  m_fontSizeBase: 0.47
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11779,9 +11533,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 02e5ca17de6e14aaa8b1ae5e1a374da5, type: 3}
@@ -11881,15 +11635,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0000000026822136
+      value: 0.00000001267793
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.045000076
+      value: 0.045000073
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000000018626451
+      value: 0.000000029802322
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_RootOrder
@@ -12104,9 +11858,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -12144,6 +11898,10 @@ PrefabInstance:
     - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_Name
       value: XR Interaction Simulator
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12200,15 +11958,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0000000037252903
+      value: -0.000000010528733
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.045000017
+      value: 0.04500005
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.00000014901161
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_RootOrder
@@ -12423,9 +12181,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -12670,9 +12428,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -12709,15 +12467,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0000000037252903
+      value: -0.000000009951233
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.045000017
+      value: 0.044999942
       objectReference: {fileID: 0}
     - target: {fileID: 1811122272821274886, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.000000029802322
       objectReference: {fileID: 0}
     - target: {fileID: 4616165200164398447, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
       propertyPath: m_RootOrder
@@ -12932,9 +12690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee002dc0cfa6c743bbb670a15b73cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetButton
-  colorJaune: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorJaune: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorBleu: {r: 0.2, g: 0.5, b: 1, a: 1}
-  colorVert: {r: 0.1, g: 0.9, b: 0.3, a: 1}
+  colorVert: {r: 0.20000002, g: 0.5019608, b: 1, a: 1}
   colorRouge: {r: 1, g: 0.15, b: 0.15, a: 1}
   inactiveColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sonEnCours: {fileID: 8300000, guid: 33cbca4a25cc84cfbad78853332bf970, type: 3}
@@ -12969,9 +12727,7 @@ SceneRoots:
   - {fileID: 756192408}
   - {fileID: 2092139010}
   - {fileID: 1249617921}
-  - {fileID: 718799857}
   - {fileID: 511158018}
   - {fileID: 186123943}
-  - {fileID: 645579480}
   - {fileID: 1763268654}
   - {fileID: 1996727468}
